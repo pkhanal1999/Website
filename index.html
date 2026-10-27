@@ -1,196 +1,257 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Purushottam Khanal's personal portfolio in purchasing, logistics and supply chain management.">
-  <title>Purushottam Khanal | Portfolio</title>
-  <style>
-    :root {
-      --navy: #142b4a;
-      --blue: #2864a5;
-      --light: #f3f6fa;
-      --text: #253247;
-      --muted: #607086;
-      --white: #ffffff;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--text);
-      background: var(--light);
-      line-height: 1.7;
-    }
-    header {
-      background: var(--navy);
-      color: var(--white);
-      padding: 18px 7%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-    .brand { font-weight: 700; font-size: 1.15rem; }
-    nav { display: flex; flex-wrap: wrap; gap: 18px; }
-    nav a { color: white; text-decoration: none; font-size: .95rem; }
-    nav a:hover { text-decoration: underline; }
-    .hero {
-      background: linear-gradient(135deg, #142b4a, #2864a5);
-      color: white;
-      padding: 95px 7%;
-      text-align: center;
-    }
-    .hero h1 { font-size: clamp(2.3rem, 6vw, 4rem); margin: 0 0 12px; }
-    .hero p { max-width: 720px; margin: 0 auto 25px; font-size: 1.15rem; }
-    .button {
-      display: inline-block;
-      padding: 11px 20px;
-      border-radius: 7px;
-      background: white;
-      color: var(--navy);
-      text-decoration: none;
-      font-weight: 700;
-    }
-    main { max-width: 1050px; margin: auto; padding: 25px 22px 55px; }
-    section {
-      background: white;
-      margin-top: 25px;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 3px 15px rgba(20, 43, 74, .05);
-    }
-    h2 { color: var(--navy); margin-top: 0; }
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 17px;
-    }
-    .card {
-      background: #f3f6fa;
-      padding: 20px;
-      border-radius: 9px;
-      border-left: 4px solid var(--blue);
-    }
-    .card h3 { margin-top: 0; color: var(--navy); }
-    .tag {
-      display: inline-block;
-      background: #e7eef8;
-      color: #214d80;
-      padding: 5px 11px;
-      border-radius: 20px;
-      margin: 4px 3px 4px 0;
-      font-size: .9rem;
-    }
-    a { color: var(--blue); }
-    footer {
-      text-align: center;
-      padding: 25px;
-      color: var(--muted);
-    }
-    @media (max-width: 600px) {
-      header { padding: 18px 5%; }
-      nav { gap: 12px; }
-      .hero { padding: 65px 6%; }
-      section { padding: 23px; }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Purushottam Khanal, Purchasing and Logistics Engineering student at JAMK. From Nepal to Finland, focused on supply chains and digital logistics.">
+<title>Purushottam Khanal | Logistics & Supply Chain</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:light;
+  --bg:#f3f6fa;--panel:#fff;--text:#0e1b2e;--muted:#4f6079;--line:#d8e0ec;
+  --fin:#0b3d91;--nep:#c8102e;--snow:#fff;--sky1:#dfe9f6;--sky2:#f3f6fa;
+  --m1:#b9c9de;--m2:#8ea6c6;--m3:#0b3d91;--lake:#cfe0f5;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;--bg:#0a1020;--panel:#121b30;--text:#eaf1fb;--muted:#9fb0c9;--line:#25344f;
+    --fin:#7aa8ff;--nep:#ff5c73;--snow:#0a1020;--sky1:#14213d;--sky2:#0a1020;
+    --m1:#24385c;--m2:#35507d;--m3:#7aa8ff;--lake:#16284a;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;--bg:#0a1020;--panel:#121b30;--text:#eaf1fb;--muted:#9fb0c9;--line:#25344f;
+  --fin:#7aa8ff;--nep:#ff5c73;--snow:#0a1020;--sky1:#14213d;--sky2:#0a1020;
+  --m1:#24385c;--m2:#35507d;--m3:#7aa8ff;--lake:#16284a;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Manrope,system-ui,sans-serif;line-height:1.7}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible{outline:2px solid var(--nep);outline-offset:3px}
+.wrap{width:min(1080px,calc(100% - 40px));margin-inline:auto}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.12;margin:0}
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.ni{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700}
+.flagmark{width:26px;height:26px;display:grid;grid-template-columns:1fr 1fr;border-radius:6px;overflow:hidden;border:1px solid var(--line)}
+.flagmark i{background:var(--nep)}.flagmark i+i{background:var(--fin)}
+.links{display:flex;gap:24px;font-size:.9rem;font-weight:600;color:var(--muted)}
+.links a:hover{color:var(--nep)}
+.menu{display:none;background:none;border:1px solid var(--line);border-radius:8px;color:var(--text);padding:7px 12px;font:inherit}
+.btn{display:inline-block;padding:12px 20px;border-radius:10px;font-weight:700;font-size:.95rem;border:1.5px solid var(--fin);transition:background .2s,color .2s}
+.btn.p{background:var(--fin);color:#fff}
+.btn.p:hover{background:var(--nep);border-color:var(--nep)}
+.btn.s{color:var(--fin)}
+.btn.s:hover{background:var(--fin);color:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.p{color:#06101f}:root:not([data-theme="light"]) .btn.s:hover{color:#06101f}}
+
+/* Hero */
+.hero{background:linear-gradient(var(--sky1),var(--sky2));padding:72px 0 0;overflow:hidden}
+.hero h1{font-size:clamp(2.5rem,6.4vw,4.8rem);letter-spacing:-.03em;max-width:13ch;font-weight:700}
+.lead{font-size:1.12rem;color:var(--muted);max-width:56ch;margin:22px 0 0}
+.acts{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.route{margin-top:48px;position:relative}
+.route svg{display:block;width:100%;height:auto}
+.stops{display:flex;justify-content:space-between;gap:16px;padding:18px 0 28px;font-size:.88rem}
+.stops div:last-child{text-align:right}
+.stops strong{display:block;font-family:Fraunces,serif;font-size:1.15rem}
+.stops span{color:var(--muted)}
+.cross{display:inline-block;width:14px;height:14px;position:relative;vertical-align:-1px;margin-right:6px;background:#fff;border:1px solid var(--line)}
+.cross::before,.cross::after{content:"";position:absolute;background:#003580}
+.cross::before{left:3px;top:0;width:3px;height:100%}.cross::after{top:5px;left:0;height:3px;width:100%}
+.pen{display:inline-block;width:12px;height:15px;background:var(--nep);clip-path:polygon(0 0,100% 50%,35% 50%,100% 100%,0 100%);margin-right:6px;vertical-align:-2px}
+
+/* Sections */
+.sec{padding:84px 0}
+.sec.alt{background:var(--panel);border-block:1px solid var(--line)}
+.sh{display:grid;grid-template-columns:1fr 1fr;gap:24px 48px;align-items:end;margin-bottom:38px}
+.sh h2{font-size:clamp(1.9rem,4vw,2.8rem);letter-spacing:-.02em}
+.sh p{margin:0;color:var(--muted)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px}
+.alt .card{background:var(--bg)}
+.card h3{font-size:1.2rem;margin-bottom:10px}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.tag{font-size:.78rem;font-weight:600;padding:4px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid3 .card{padding:22px}
+.grid3 h3{font-size:1.05rem}
+.proj{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.proj .card{border-top:3px solid var(--fin)}
+.proj .card:nth-child(even){border-top-color:var(--nep)}
+.kind{font-size:.8rem;font-weight:700;color:var(--nep);margin-bottom:6px}
+.tl{display:grid;grid-template-columns:170px 1fr;gap:24px;padding:22px 0;border-bottom:1px solid var(--line)}
+.tl:last-child{border:0}
+.tl:first-child{padding-top:0}
+.tl b{font-weight:700;color:var(--fin)}
+.tl h3{font-size:1.1rem;margin-bottom:4px}
+.tl p{margin:0;color:var(--muted);font-size:.95rem}
+.contact{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center}
+.contact h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:10px}
+.contact p{margin:0;color:var(--muted);max-width:56ch}
+.foot{padding:26px 0 36px;color:var(--muted);font-size:.85rem}
+.foot .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:22px}
+.foot a{color:var(--fin);font-weight:600}
+@media (max-width:820px){
+  .sh,.two,.contact{grid-template-columns:1fr}
+  .grid3{grid-template-columns:1fr 1fr}
+  .sec{padding:62px 0}
+}
+@media (max-width:580px){
+  .menu{display:block}
+  .ni{flex-wrap:wrap;padding:10px 0}
+  .links{display:none;width:100%;flex-direction:column;gap:10px;padding-bottom:12px}
+  .links.open{display:flex}
+  .grid3,.proj{grid-template-columns:1fr}
+  .tl{grid-template-columns:1fr;gap:4px}
+  .hero{padding-top:48px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+@keyframes draw{to{stroke-dashoffset:0}}
+.path{stroke-dasharray:1200;stroke-dashoffset:1200;animation:draw 2.6s .3s ease forwards}
+</style>
 </head>
 <body>
-  <header>
-    <div class="brand">Purushottam Khanal</div>
-    <nav aria-label="Main navigation">
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<header class="nav"><div class="wrap ni">
+  <a class="brand" href="#home" aria-label="Purushottam Khanal, home"><span class="flagmark" aria-hidden="true"><i></i><i></i></span>Purushottam Khanal</a>
+  <button class="menu" id="mt" aria-expanded="false" aria-controls="nl">Menu</button>
+  <nav class="links" id="nl" aria-label="Main navigation">
+    <a href="#about">About</a><a href="#focus">Focus</a><a href="#projects">Projects</a><a href="#background">Background</a><a href="#contact">Contact</a>
+  </nav>
+</div></header>
 
-  <div class="hero">
-    <h1>Purushottam Khanal</h1>
-    <p>Purchasing &amp; Logistics Engineering Student | Supply Chain and Logistics Enthusiast</p>
-    <a class="button" href="#about">Explore My Portfolio</a>
+<main>
+<section class="hero" id="home">
+  <div class="wrap">
+    <h1>From the Himalaya to the Nordics, I move things forward.</h1>
+    <p class="lead">I’m Purushottam Khanal, a Purchasing and Logistics Engineering student at JAMK University of Applied Sciences. Born in Nepal, studying and working in Finland, I’m interested in practical operations, supply chain improvement, and digital tools that make logistics more visible and reliable.</p>
+    <div class="acts">
+      <a class="btn p" href="#projects">See my projects</a>
+      <a class="btn s" href="#contact">Get in touch</a>
+    </div>
+
+    <div class="route" aria-label="Illustration of a route from Nepal to Finland">
+      <svg viewBox="0 0 1080 300" role="img" aria-label="Mountains on the left, lakes and forest on the right, joined by a route line">
+        <polygon points="0,300 0,190 90,90 150,150 230,40 330,160 400,110 470,300" fill="var(--m1)"/>
+        <polygon points="0,300 0,230 120,150 210,230 300,120 420,240 520,300" fill="var(--m2)"/>
+        <polygon points="230,40 205,78 222,72 236,88 250,70 262,80" fill="var(--snow)"/>
+        <polygon points="90,90 72,118 88,112 100,124 114,110" fill="var(--snow)" opacity=".9"/>
+        <rect x="600" y="240" width="480" height="60" fill="var(--lake)"/>
+        <ellipse cx="860" cy="262" rx="150" ry="14" fill="var(--m1)" opacity=".55"/>
+        <g fill="var(--m3)" opacity=".8">
+          <polygon points="640,240 654,190 668,240"/><polygon points="668,240 685,172 702,240"/><polygon points="702,240 716,200 730,240"/>
+          <polygon points="940,240 955,185 970,240"/><polygon points="968,240 986,168 1004,240"/><polygon points="1004,240 1018,198 1032,240"/>
+        </g>
+        <path class="path" d="M120 150 C 300 20, 520 40, 700 120 S 900 150, 960 200" fill="none" stroke="var(--nep)" stroke-width="3" stroke-dasharray="1200" stroke-linecap="round"/>
+        <circle cx="120" cy="150" r="9" fill="var(--nep)"/><circle cx="960" cy="200" r="9" fill="var(--fin)"/>
+        <circle cx="120" cy="150" r="16" fill="none" stroke="var(--nep)" opacity=".4"/><circle cx="960" cy="200" r="16" fill="none" stroke="var(--fin)" opacity=".4"/>
+      </svg>
+      <div class="stops">
+        <div><strong><span class="pen" aria-hidden="true"></span>Nepal</strong><span>Where I’m from</span></div>
+        <div><strong><span class="cross" aria-hidden="true"></span>Finland</strong><span>Where I study and work</span></div>
+      </div>
+    </div>
   </div>
+</section>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I am a Purchasing and Logistics Engineering student at JAMK University
-        of Applied Sciences in Finland, interested in purchasing, logistics,
-        supply chain operations and continuous improvement.
-      </p>
-      <p>
-        Through my studies and work experience, I am developing practical
-        skills in teamwork, quality, customer service and operational processes.
-        I am motivated to learn, take responsibility and grow professionally.
-      </p>
-    </section>
+<section class="sec alt" id="about">
+  <div class="wrap">
+    <div class="sh"><h2>Practical mindset, steady improvement.</h2>
+      <p>A hands-on service background, engineering studies, and a growing interest in how operations can be improved.</p></div>
+    <div class="two">
+      <article class="card">
+        <h3>Understand the process, then improve it.</h3>
+        <p>Good logistics depends on clear communication, dependable execution, accurate information, and people working together. I enjoy learning how each part of a process connects to the bigger picture. Moving between two countries has taught me to adapt quickly and work well with different people.</p>
+        <div class="tags"><span class="tag">Practical first</span><span class="tag">Learn and adapt</span><span class="tag">Team player</span></div>
+      </article>
+      <article class="card">
+        <h3>Connecting operations with digital thinking.</h3>
+        <p>My thesis work explores visibility in cold-chain logistics, including how IoT sensor data could help identify temperature risks and support better decisions during transport.</p>
+        <div class="tags"><span class="tag">Supply chain</span><span class="tag">Cold chain</span><span class="tag">IoT concepts</span><span class="tag">Process improvement</span></div>
+      </article>
+    </div>
+  </div>
+</section>
 
-    <section id="education">
-      <h2>Education</h2>
-      <div class="card">
-        <h3>Bachelor's Degree in Purchasing and Logistics Engineering</h3>
-        <p>JAMK University of Applied Sciences, Finland</p>
-        <p>Focus areas: purchasing, logistics, supply chains and project work.</p>
-      </div>
-    </section>
+<section class="sec" id="focus">
+  <div class="wrap">
+    <div class="sh"><h2>Where I can add value.</h2>
+      <p>A developing skill set shaped by engineering studies, project assignments, and hands-on work.</p></div>
+    <div class="grid3">
+      <article class="card"><h3>Logistics and supply chain</h3><p>Material flow, transport, inventory, coordination, and reliable day-to-day execution.</p></article>
+      <article class="card"><h3>Digital logistics</h3><p>How connected sensors and real-time data can improve shipment visibility and risk awareness.</p></article>
+      <article class="card"><h3>Project collaboration</h3><p>Research, planning, and reporting with teams, turning findings into practical recommendations.</p></article>
+      <article class="card"><h3>Quality and service</h3><p>Service environments where consistency, standards, and attention to detail matter.</p></article>
+      <article class="card"><h3>Communication</h3><p>Building working relationships, sharing updates, and coordinating tasks across a team.</p></article>
+      <article class="card"><h3>Learning mindset</h3><p>Keen to build new technical and operational skills and take on broader logistics responsibility.</p></article>
+    </div>
+  </div>
+</section>
 
-    <section id="skills">
-      <h2>Skills &amp; Interests</h2>
-      <span class="tag">Purchasing</span>
-      <span class="tag">Logistics Operations</span>
-      <span class="tag">Supply Chain Management</span>
-      <span class="tag">Quality</span>
-      <span class="tag">Teamwork</span>
-      <span class="tag">Customer Service</span>
-      <span class="tag">Project Work</span>
-      <span class="tag">Continuous Improvement</span>
-    </section>
+<section class="sec alt" id="projects">
+  <div class="wrap">
+    <div class="sh"><h2>Selected work.</h2>
+      <p>Academic and team projects reflecting my interest in logistics, research, and better operations.</p></div>
+    <div class="proj">
+      <article class="card"><div class="kind">Thesis concept</div><h3>IoT for cold-chain visibility</h3>
+        <p>A conceptual model for how real-time temperature, humidity, and handling data could support risk awareness and reduce spoilage in perishable transport.</p>
+        <div class="tags"><span class="tag">Cold chain</span><span class="tag">IoT</span><span class="tag">Literature review</span></div></article>
+      <article class="card"><div class="kind">Market research</div><h3>AistiSiimes: German market entry</h3>
+        <p>Team research and partner mapping for the German hotel, spa, and wellness market, including B2B customer segments and entry messaging.</p>
+        <div class="tags"><span class="tag">Market research</span><span class="tag">Partner mapping</span><span class="tag">B2B</span></div></article>
+      <article class="card"><div class="kind">Team project</div><h3>Ergonomic chair factory</h3>
+        <p>Quality-focused planning and report preparation for a factory concept, linking project planning with clear documentation.</p>
+        <div class="tags"><span class="tag">Quality</span><span class="tag">Documentation</span><span class="tag">Teamwork</span></div></article>
+      <article class="card"><div class="kind">Professional development</div><h3>From service work to logistics</h3>
+        <p>Using practical work experience to build a stronger grasp of operational standards and dependable execution in logistics settings.</p>
+        <div class="tags"><span class="tag">Operations</span><span class="tag">Transferable skills</span></div></article>
+    </div>
+  </div>
+</section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>IoT in Cold Chain Logistics</h3>
-          <p>
-            Bachelor's thesis project exploring a conceptual model for using
-            real-time IoT data to help reduce spoilage risks during
-            perishable-goods transportation.
-          </p>
-        </div>
-        <div class="card">
-          <h3>International Market Research</h3>
-          <p>
-            Collaborative project research exploring the German hotel,
-            spa and wellness market and potential B2B partners.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Quality and Project Work</h3>
-          <p>
-            Academic teamwork involving project planning, quality considerations,
-            reporting and collaboration.
-          </p>
-        </div>
-      </div>
-    </section>
+<section class="sec" id="background">
+  <div class="wrap">
+    <div class="sh"><h2>Learning through study and work.</h2>
+      <p>A snapshot of my path so far. Dates and role details can be added as needed.</p></div>
+    <div class="card">
+      <div class="tl"><b>Education</b><div><h3>Bachelor’s studies, Purchasing and Logistics Engineering</h3><p>JAMK University of Applied Sciences, Finland. Coursework and projects in purchasing, logistics, project work, and sustainability.</p></div></div>
+      <div class="tl"><b>Work</b><div><h3>Housekeeping and service operations</h3><p>Practical experience in Finland’s service sector, with focus on quality standards, time management, teamwork, and reliable daily execution.</p></div></div>
+      <div class="tl"><b>Earlier work</b><div><h3>Hospitality and office support</h3><p>Experience across hospitality, office support, and team responsibilities, building a flexible and practical approach to work.</p></div></div>
+    </div>
+  </div>
+</section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>I welcome professional connections and opportunities to learn and grow.</p>
-      <p>Email: <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">Add your LinkedIn profile</a></p>
-    </section>
-  </main>
+<section class="sec alt" id="contact">
+  <div class="wrap contact">
+    <div>
+      <h2>Let’s talk logistics.</h2>
+      <p>I’d like to connect with people and teams in logistics, supply chain, purchasing, and operations. Reach out through my profiles below.</p>
+    </div>
+    <div class="acts" style="margin:0">
+      <a class="btn p" href="https://github.com/pkhanal1999" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a class="btn s" href="https://www.linkedin.com/in/purushottam-khanal-07311b226/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+  </div>
+</section>
+</main>
 
-  <footer>
-    <p>&copy; 2026 Purushottam Khanal. Personal portfolio.</p>
-  </footer>
+<footer class="foot"><div class="wrap">
+  <span>© <span id="yr"></span> Purushottam Khanal · purushottamkhanal.com.np</span>
+  <a href="#home">Back to top</a>
+</div></footer>
+
+<script>
+var t=document.getElementById('mt'),n=document.getElementById('nl');
+t.addEventListener('click',function(){var o=n.classList.toggle('open');t.setAttribute('aria-expanded',String(o))});
+n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('open');t.setAttribute('aria-expanded','false')})});
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
 </body>
 </html>
